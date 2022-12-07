@@ -1,0 +1,23 @@
+:root{
+    --blue: rgb(18,177,227);
+    --dark: rgb(32,33,36);
+    --light: rgb(243,243,238);
+    --blue-transparent: rgba(18,177,227,0.7);
+}
+
+body{
+    background-color: var(--dark);
+}
+
+.gallary-container{
+    background-color: var(--dark);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallary-image{
+    height: auto;
+    width: 30%;
+    object-fit: cover;
+    margin: 2px;
+}

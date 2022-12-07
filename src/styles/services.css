@@ -1,0 +1,44 @@
+:root{
+    --blue: rgb(18,177,227);
+    --dark: rgb(32,33,36);
+    --light: rgb(243,243,238);
+    --blue-transparent: rgba(18,177,227,0.7);
+}
+
+body{
+    background-color: var(--light);
+}
+
+.services-header{
+    color: var(--blue);
+    text-align: center;
+    border-bottom: 2px solid var(--blue);
+    margin: 0px 10px 0px 10px;
+    height: 10vh
+}
+
+.serv-text{
+    margin-top: 50px;
+    color: var(--light);
+}
+
+.serv-item-container{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr 2fr;
+}
+
+.serv-item{
+    width: 20vw;
+    height: auto;
+    background-color: var(--dark);
+    padding: 50px;
+    margin: 10px;
+}
+
+.icon{
+    font-size: 100px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    color: var(--blue);
+}
