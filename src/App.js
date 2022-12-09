@@ -41,7 +41,7 @@ function App() {
       <Fade>
         {slideshowImages.map(img => {
           return(
-            <div className='each-slide-effect'>
+            <div className='each-slide-effect' key={slideshowImages.indexOf(img)}>
               <div>
                 <img src={img} alt="background" className='slideshow-image'/>
               </div>

@@ -12,16 +12,16 @@ const Navbar = () => {
                 {NAV_DATA.map(page => {
                     if(page === 'Home') {
                         return(
-                            <div className="link-container">
-                                <Link to={`/`} key={NAV_DATA.indexOf(page)} className="link">
+                            <div className="link-container" key={NAV_DATA.indexOf(page)}>
+                                <Link to={`/`} className="link">
                                     Home
                                 </Link >
                             </div>
                         )
                     } else {
                         return(
-                            <div className="link-container">
-                                <Link to={`/${page.toLowerCase()}`} key={NAV_DATA.indexOf(page)} className="link">
+                            <div className="link-container" key={NAV_DATA.indexOf(page)}>
+                                <Link to={`/${page.toLowerCase()}`} className="link">
                                     {page}
                                 </Link >
                             </div>
