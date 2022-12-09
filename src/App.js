@@ -103,10 +103,16 @@ function App() {
             <div className='footer-main-sect'>
               <h3 className='footer-heading'>Contact us</h3>
               <ul className='footer-list'>
-                <li>Phone: 01222 222 222</li>
-                <li>Address: blah blah blah</li>
-                <li>E-Mail: <a>something@summers.co.uk</a></li>
-                <li>Fax: 01222 222 223</li>
+                <li>Phone: 01592 713 172</li>
+                <li>Address:<br /> Robert Summers Transport Ltd <br />
+                              Tollpark Transport Centre<br />
+                              Station Rd<br />
+                              Leven<br />
+                              Fife<br />
+                              KY8 1JH<br />
+                </li>
+                <li>E-Mail: <a href='mailto:traffic@robertsummerstransport.co.uk'>traffic@robertsummerstransport.co.uk</a></li>
+                <li>Fax: 01592 715 046</li>
               </ul>
             </div>
             <div className='vertical-rule'></div>
@@ -119,6 +125,7 @@ function App() {
                 <li>Raw material to site deliveries</li>
               </ul>
             </div>
+            <div className='vertical-rule'></div>
           </div>
         </div>
       </footer>
