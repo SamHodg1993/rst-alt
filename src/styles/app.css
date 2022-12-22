@@ -3,18 +3,45 @@
     --dark: rgb(32,33,36);
     --light: rgb(243,243,238);
     --blue-transparent: rgba(18,177,227,0.7);
+    --red: rgb(199,65,72);
 }
 
 *{
     margin: 0;
+    font-family: 'Poppins';
 }
 
 .homepage-container{
     height: 100vh;
     background-color: var(--light);
-    /* background-image: url('../images/SeanTrussHighlands.jpg'); */
     background-repeat: no-repeat;
     background-size: 100vw auto;
+}
+
+.homepage-slider {
+    background-color: var(--dark);
+}
+
+.hr{
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    height: 0.13rem;
+    width: 30%;
+    background-color: red;
+}
+
+.home-info {
+    background-color: var(--dark);
+    color: var(--light);
+    padding: 2rem 1rem;
+}
+
+.home-info > h2 {
+    font-size: x-large;
+}
+
+.home-info > p {
+    font-size: large;
 }
 
 .homepage-image{
@@ -28,7 +55,6 @@
 
 .homepage-header{
     height: 20vh;
-    width: 100%;
     background-color: var(--dark);
     color: white;
     display: flex;
@@ -38,15 +64,15 @@
 }
 
 .tile-wrapper{
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    margin: 20px 0;
+    display: grid;
+    grid-template-rows: 6fr 6fr 6fr 6fr 6fr 6fr;
+    padding: 0 0 2rem 0;
+    background-color: var(--dark);
 }
 
 .section-tiles{
-    height: 600px;
-    width: 600px;
+    height: 23rem;
+    width: 92vw;
     background-repeat: no-repeat;
     background-size: cover;
     color: var(--light);
@@ -54,6 +80,7 @@
     text-align: center;
     transition-duration: 0.3s;
     overflow: hidden;
+    margin: 1rem;
 }
 
 .section-tiles:hover{
@@ -92,11 +119,11 @@
 } */
 
 .review-wrapper{
-    height: 200px;
+    height: 60vh;
+    align-items: center;
     width: 80vw;
+    margin-top: 5rem;
     margin-left: 50%;
-    margin-top: 160px;
-    margin-bottom: 60px;
     transform: translate(-50%);
     margin-bottom: 220px;
     text-align: center;
@@ -109,43 +136,7 @@
 
 .review-main{
     font-family: 'Calligraffitti', 'Poppins', sans-serif;
-    font-size: 300%;
+    margin-top: 2rem;
+    font-size: 225%;
 }
 
-.footer{
-    height: 80vh;
-    background-color: rgb(19,26,34);
-    color: white;
-}
-
-.vertical-rule{
-    height: 200px;
-    border-left: 1px solid white;
-}
-
-.footer-container{
-    width: 80%;
-    margin-left: 50%;
-    transform: translate(-50%);
-    text-align: center;
-}
-
-.footer-top{
-    margin-bottom: 10px;
-}
-
-.footer-main{
-    display: flex;
-}
-
-.footer-main-sect{
-    width: 20%;
-}
-
-.footer-heading{
-    margin-bottom: 20px;
-}
-
-.footer-list{
-    list-style: none;
-}

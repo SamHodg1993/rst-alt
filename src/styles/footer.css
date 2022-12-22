@@ -1,0 +1,38 @@
+:root{
+    --blue: rgb(18,177,227);
+    --dark: rgb(32,33,36);
+    --light: rgb(243,243,238);
+    --blue-transparent: rgba(18,177,227,0.7);
+}
+
+.footer{
+    display: grid;
+    background-color: var(--dark);
+    color: var(--light);
+    padding-top: 1rem;
+}
+
+.hr {
+    background-color: red
+}
+
+.footer-main-sect {
+    padding-top: 1rem;
+}
+
+.footer-list{
+    list-style: none;
+}
+
+.footer-list > li {
+    padding: 0.5rem;
+}
+
+.mail-to {
+    text-decoration: none;
+    color: var(--light)
+}
+
+.mail-to:hover {
+    cursor: pointer;
+}

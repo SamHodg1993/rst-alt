@@ -22,6 +22,7 @@ import fleetImage from './images/tile-images/Lineoftrucks.jpg';
 import careersImage from './images/tile-images/GerrySolo.jpg';
 import testimonialsImage from './images/tile-images/FSE.jpg';
 import accoladesImage from './images/tile-images/SeanNewTruckShow.jpg';
+import Footer from './components/Footer';
 
 const slideshowImages = [SeanTrussHighlands, 
   WhiskyCollection, 
@@ -37,18 +38,26 @@ function App() {
 
   return (
     <div className="homepage-container">
-      <Navbar />
-      <Fade>
-        {slideshowImages.map(img => {
-          return(
-            <div className='each-slide-effect' key={slideshowImages.indexOf(img)}>
-              <div>
-                <img src={img} alt="background" className='slideshow-image'/>
+      {/* <Navbar /> */}
+      <div className="homepage-slider">
+        <Fade>
+          {slideshowImages.map(img => {
+            return(
+              <div className='each-slide-effect' key={slideshowImages.indexOf(img)}>
+                <div>
+                  <img src={img} alt="background" className='slideshow-image'/>
+                </div>
               </div>
-            </div>
-          )
-        })}
-      </Fade>
+            )
+          })}
+        </Fade>
+      </div>
+      <div className='home-info'>
+        <h2>Robert Summers Transport for all your haulage needs</h2>
+        <div className='hr'></div>
+        <p>At RST, we value our customers above all else, dedicated to providing the
+          most proffesional haulage service around, we cover the entire UK </p>
+      </div>
       <div className='tile-wrapper'>
         <Link to="/services" className='section-tiles'>
           <h2 className='tile-header'>Services</h2>
@@ -62,8 +71,6 @@ function App() {
           <h2 className='tile-header'>Our Fleet</h2>
           <img src={fleetImage} alt="background" className='image-tile'/>
         </Link>
-      </div>
-      <div className='tile-wrapper'>
         <Link to="/" className='section-tiles'>
           <h2 className='tile-header'>Careers</h2>
           <img src={careersImage} alt="background" className='image-tile'/>
@@ -87,48 +94,7 @@ function App() {
           )
         })}
       </Slide>
-      <footer className='footer'>
-        <div className='footer-container'>
-          <div className='footer-top'>
-            <h3>Robert Summers Transport</h3>
-            <hr />
-          </div>
-          <div className='footer-main'>
-            <div className='vertical-rule'></div>
-            <div className='footer-main-sect'>
-              <h3 className='footer-heading'>About us</h3>
-              <p>Established in 1993 RST is a family owned company who prides itself in providing the best service in Fife!</p>
-            </div>
-            <div className='vertical-rule'></div>
-            <div className='footer-main-sect'>
-              <h3 className='footer-heading'>Contact us</h3>
-              <ul className='footer-list'>
-                <li>Phone: 01592 713 172</li>
-                <li>Address:<br /> Robert Summers Transport Ltd <br />
-                              Tollpark Transport Centre<br />
-                              Station Rd<br />
-                              Leven<br />
-                              Fife<br />
-                              KY8 1JH<br />
-                </li>
-                <li>E-Mail: <a href='mailto:traffic@robertsummerstransport.co.uk'>traffic@robertsummerstransport.co.uk</a></li>
-                <li>Fax: 01592 715 046</li>
-              </ul>
-            </div>
-            <div className='vertical-rule'></div>
-            <div className='footer-main-sect'>
-              <h3 className='footer-heading'>Services</h3>
-              <ul className='footer-list'>
-                <li>UK wide logistics solutions</li>
-                <li>Various trailer type hire</li>
-                <li>Shipping and Freight Managament</li>
-                <li>Raw material to site deliveries</li>
-              </ul>
-            </div>
-            <div className='vertical-rule'></div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }

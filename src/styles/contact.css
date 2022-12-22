@@ -6,6 +6,22 @@
 }
 
 .contact-container{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr 4fr 4fr 4fr;
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+.contact-item {
+    padding-top: 2rem;
+}
+
+.list {
+    list-style: none;
+}
+
+.google-map {
+    margin: 0 10px 0 10px;
 }
