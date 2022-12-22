@@ -13,7 +13,7 @@ function Contact() {
   const screenWidth = window.innerWidth;
 
   return (
-    <div>
+    <div className='contact-cont'>
       <Navbar />
       <h1 className='contact-header'>Contact</h1>
       <div className='contact-container' id="test4">

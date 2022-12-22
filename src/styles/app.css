@@ -38,10 +38,13 @@
 
 .home-info > h2 {
     font-size: x-large;
+    background-color: var(--dark);
 }
+
 
 .home-info > p {
     font-size: large;
+    background-color: var(--dark);
 }
 
 .homepage-image{

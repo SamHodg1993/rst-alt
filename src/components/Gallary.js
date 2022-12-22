@@ -7,7 +7,7 @@ import '../styles/gallary.css';
 
 const Gallary = () => {
     return(
-        <div>
+        <div className="gallary-cont">
             <Navbar />
             <h1 className="gallary-header">Gallary</h1>
             <div className="gallary-container">

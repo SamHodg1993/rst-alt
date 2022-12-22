@@ -10,6 +10,10 @@ body{
     background-color: var(--dark);
 }
 
+.gallary-cont {
+    background-color: var(--dark);
+}
+
 .gallary-header{
     color: var(--blue);
     text-align: center;
