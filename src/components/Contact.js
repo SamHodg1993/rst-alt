@@ -15,6 +15,7 @@ function Contact() {
   return (
     <div>
       <Navbar />
+      <h1 className='contact-header'>Contact</h1>
       <div className='contact-container' id="test4">
         <div className='contact-item'>
           <img src={FiHome} alt="home icon"/>

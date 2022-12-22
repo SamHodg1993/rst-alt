@@ -3,6 +3,15 @@
     --dark: rgb(32,33,36);
     --light: rgb(243,243,238);
     --blue-transparent: rgba(18,177,227,0.7);
+    --red: rgb(199,65,72);
+}
+
+.about-header{
+    color: var(--blue);
+    text-align: center;
+    border-bottom: 2px solid var(--red);
+    margin: 0px 10px 0px 10px;
+    height: 10vh;
 }
 
 .about-container{
@@ -10,6 +19,28 @@
 }
 
 .about-section{
+    display: grid;
+    grid-template-rows: 3fr 3fr 3fr ;
+    height: 100vh;
+    margin-top: 2rem;
+}
+
+.about-image{
+    width: 80vw;
+    border-radius: 10px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 3rem;
+}
+
+.about-text{
+    color: var(--light);
+    padding: 2rem;
+}
+
+/* For Breakpoints
+
+.about-section=forwards{
     display: flex;
     text-align: center;
     align-items: center;
@@ -28,14 +59,4 @@
     border-radius: 10px;
 }
 
-.about-image{
-    height: auto;
-    width: 45vw;
-    border-radius: 10px;
-    margin: 10px;
-}
-
-.about-text{
-    padding: 20px;
-    color: var(--light);
-}
+*/

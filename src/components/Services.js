@@ -3,6 +3,7 @@ import { FaWarehouse, FaTruckMoving, FaRoad, FaMap } from 'react-icons/fa';
 import '../styles/services.css';
 
 import Navbar from './Navbar';
+import Footer from './Footer';
 
 
 function Services() {
@@ -28,145 +29,7 @@ function Services() {
                 <p className='serv-text'>Delivery of all good via road transport in accordance with the best practices defined by the Road Haulage Association.</p>
             </div>
         </div>
-            <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
-      <p>2</p>
+        <Footer />
     </div>
   )
 }

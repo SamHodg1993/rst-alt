@@ -3,18 +3,23 @@
     --dark: rgb(32,33,36);
     --light: rgb(243,243,238);
     --blue-transparent: rgba(18,177,227,0.7);
+    --red: rgb(199,65,72);
 }
 
 body{
     background-color: var(--light);
 }
 
+.serv-cont {
+    background-color: var(--dark);
+}
+
 .services-header{
     color: var(--blue);
     text-align: center;
-    border-bottom: 2px solid var(--blue);
+    border-bottom: 2px solid var(--red);
     margin: 0px 10px 0px 10px;
-    height: 10vh
+    height: 10vh;
 }
 
 .serv-text{
@@ -24,16 +29,17 @@ body{
 
 .serv-item-container{
     display: grid;
-    grid-template-columns: 2fr 2fr;
-    grid-template-rows: 2fr 2fr;
+    grid-template-rows: 4fr 4fr 4fr 4fr;
+    background-color: var(--dark);
 }
 
 .serv-item{
-    width: 20vw;
+    width: 60vw;
     height: auto;
     background-color: var(--dark);
     padding: 50px;
-    margin: 10px;
+    margin: 1rem;
+    border-bottom: 3px solid var(--);
 }
 
 .icon{
