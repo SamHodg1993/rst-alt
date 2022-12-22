@@ -38,25 +38,16 @@
     padding: 2rem;
 }
 
-/* For Breakpoints
-
-.about-section=forwards{
-    display: flex;
-    text-align: center;
-    align-items: center;
-    margin: 30px 20px 30px 20px;
-    background-color: var(--blue-transparent);
-    border-radius: 10px;
+@media (min-width: 768px) {
+    .about-section {
+        height: 45rem;
+    }
 }
 
-.about-section-reverse{
-    display: flex;
-    flex-direction: row-reverse;
-    text-align: center;
-    align-items: center;
-    margin: 30px 20px 30px 20px;
-    background-color: var(--blue-transparent);
-    border-radius: 10px;
+@media (min-width: 992px) {	
+	
 }
 
-*/
+@media (min-width: 1200px) {
+	
+}

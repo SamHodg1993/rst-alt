@@ -37,3 +37,20 @@
 .mail-to:hover {
     cursor: pointer;
 }
+
+@media (min-width: 768px) {
+    .footer-heading {
+        margin-left: 6rem;
+    }
+
+    .footer-list {
+        margin-left: 8rem;
+    }
+}
+
+@media (min-width: 992px) {	
+	
+}
+@media (min-width: 1200px) {
+	
+}
