@@ -53,9 +53,9 @@ function App() {
         </Fade>
       </div>
       <div className='home-info'>
-        <h2>Robert Summers Transport for all your haulage needs</h2>
+        <h2 className='intro-main'>Robert Summers Transport for all your haulage needs</h2>
         <div className='hr'></div>
-        <p>At RST, we value our customers above all else, dedicated to providing the
+        <p className='intro-details'>At RST, we value our customers above all else, dedicated to providing the
           most proffesional haulage service around, we cover the entire UK </p>
       </div>
       <div className='tile-wrapper'>
@@ -94,7 +94,9 @@ function App() {
           )
         })}
       </Slide>
-      <Footer />
+      <div className='footer-div'>
+        <Footer />
+      </div>
     </div>
   )
 }
