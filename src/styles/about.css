@@ -49,5 +49,27 @@
 }
 
 @media (min-width: 1200px) {
-	
+
+    .about-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-image {
+        max-width: 60rem;
+        padding: 3rem;
+        border-radius: 25px;
+    }
+
+	.about-text {
+        padding: 2rem 14rem;
+    }
 }
