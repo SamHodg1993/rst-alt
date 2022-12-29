@@ -31,7 +31,7 @@ function Contact() {
         </div>
         <div className='contact-item'>
           <img src={FiPhoneCall} alt="phone icon" />
-          <h4>Phone</h4>
+          <h4 className='phone'>Phone</h4>
           <ul className='list'>
             <li>01592 713 172</li>
           </ul>
@@ -48,7 +48,7 @@ function Contact() {
           <h4>E-Mail</h4>
           <ul className='list'>
             <p>
-                <a href='mailto:traffic@robertsummerstransport.co.uk'>traffic@robertsummerstransport.co.uk</a>
+                <a href='mailto:traffic@robertsummerstransport.co.uk' className='e-mail-address'>traffic@robertsummerstransport.co.uk</a>
             </p>
           </ul>
         </div>

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { RiDoubleQuotesL, RiDoubleQuotesR } from 'react-icons/ri';
 
 import Navbar from "./components/Navbar";
+import MobileNavList from './components/MobileNavList';
 import reviewsData from './data/reviewsData';
 
 import './styles/app.css';
@@ -23,6 +24,8 @@ import careersImage from './images/tile-images/GerrySolo.jpg';
 import testimonialsImage from './images/tile-images/FSE.jpg';
 import accoladesImage from './images/tile-images/SeanNewTruckShow.jpg';
 import Footer from './components/Footer';
+import MobileNavbar from './components/MobileNavbar';
+import { useState } from 'react';
 
 const slideshowImages = [SeanTrussHighlands, 
   WhiskyCollection, 
@@ -36,10 +39,19 @@ const slideshowImages = [SeanTrussHighlands,
 
 function App() {
 
+  const [showMobileNavList, setShowMobileNavList] = useState(false);
+
+  const handleShowMobileNavList = () => {
+  }
+
   return (
     <div className="homepage-container">
-      {/* <Navbar /> */}
-      <div className="homepage-slider">
+      {window.innerWidth > 800 && <Navbar />}
+      {window.innerWidth < 800 && <MobileNavbar handleShowMobileNavList={handleShowMobileNavList}/>}
+      {showMobileNavList && <MobileNavList />}
+      {!showMobileNavList && 
+      <div>
+        <div className="homepage-slider">
         <Fade>
           {slideshowImages.map(img => {
             return(
@@ -97,6 +109,9 @@ function App() {
       <div className='footer-div'>
         <Footer />
       </div>
+    </div>
+      }
+      
     </div>
   )
 }

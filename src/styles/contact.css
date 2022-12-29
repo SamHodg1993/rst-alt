@@ -30,12 +30,27 @@
 
 .contact-item {
     padding-top: 2rem;
+    padding-bottom: 2rem;
     width: 50%;
     gap: 0;
+    text-align: center;
+}
+
+.e-mail-address {
+    color: var(--blue);
+    text-decoration: none;
 }
 
 .list {
     list-style: none;
+}
+
+.phone {
+    margin-top: 10%;
+}
+
+.list > * {
+    padding-top: 1rem;
 }
 
 .google-map {
@@ -50,8 +65,9 @@
 }
 
 @media (min-width: 992px) {	
-	
+
 }
+
 @media (min-width: 1200px) {
-	
+    
 }

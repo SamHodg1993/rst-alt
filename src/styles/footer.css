@@ -52,5 +52,8 @@
 	
 }
 @media (min-width: 1200px) {
-	
+	footer {
+        margin-left: 50%;
+        transform: translate(-50%);
+    }
 }

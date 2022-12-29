@@ -83,12 +83,15 @@
     text-align: center;
     overflow: hidden;
     margin: 1rem;
+    transition-duration: 0.2s;
+    box-shadow: 6px 8px 10px 4px rgba(18,177,227,0.3);
 }
 
 .section-tiles:hover{
     background-size: 135%;
     cursor: pointer;
     transform: rotate(-3deg) scale(1.1);
+    transition-duration: 0.2s;
 }
 
 .image-tile{
@@ -195,5 +198,9 @@
 @media (min-width: 1200px) {
 	.image-tile {
         transform: translate(0);
+    }
+
+    .section-tiles {
+        height: 25rem;
     }
 }
