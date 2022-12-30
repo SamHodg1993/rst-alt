@@ -1,8 +1,8 @@
 import { Fade, Slide } from 'react-slideshow-image';
 import { Link } from 'react-router-dom';
 import { RiDoubleQuotesL, RiDoubleQuotesR } from 'react-icons/ri';
+import { useContext } from 'react';
 
-import Navbar from "./components/Navbar";
 import MobileNavList from './components/MobileNavList';
 import reviewsData from './data/reviewsData';
 
@@ -24,10 +24,8 @@ import careersImage from './images/tile-images/GerrySolo.jpg';
 import testimonialsImage from './images/tile-images/FSE.jpg';
 import accoladesImage from './images/tile-images/SeanNewTruckShow.jpg';
 import Footer from './components/Footer';
-import MobileNavbar from './components/MobileNavbar';
-import { useContext, useState } from 'react';
 import NavChooser from './components/NavChooser';
-import { UserContext } from './context/UserContext';
+import { AppContext } from './components/Interim';
 
 const slideshowImages = [SeanTrussHighlands, 
   WhiskyCollection, 
@@ -41,13 +39,13 @@ const slideshowImages = [SeanTrussHighlands,
 
 function App() {
 
-  const showingMobile = useContext(UserContext);
+  const { showMobileList } = useContext(AppContext);
 
   return (
     <div className="homepage-container">
       <NavChooser />
-      {showingMobile && <MobileNavList />}
-      {!showingMobile && 
+      {showMobileList && <MobileNavList />}
+      {!showMobileList && 
       <div>
         <div className="homepage-slider">
         <Fade>
