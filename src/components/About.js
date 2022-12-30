@@ -1,17 +1,29 @@
-import Navbar from './Navbar';
+import { useContext, useState } from 'react';
+
 import Footer from './Footer';
+import NavChooser from './NavChooser';
 
 import '../styles/about.css';
 
 import RSTOldTruck from '../images/RSTOldTruck.jpg';
 import Truckfest from '../images/Truckfest.jpg';
 import SeanSiteDelivery from '../images/SeanSiteDelivery.jpg';
+import { UserContext } from '../context/UserContext';
 
 function About() {
+
+  const message = useContext(UserContext);
+
+  const [showMobileNavList, setShowMobileNavList] = useState(false);
+
+  const handleShowMobileNavList = () => {
+    showMobileNavList ? setShowMobileNavList(false) : setShowMobileNavList(true);
+  }
   return (
     <div className='about-container' id="test3">
-        <Navbar />
+      <NavChooser handleShowMobileNavList={handleShowMobileNavList}/>
         <h1 className='about-header'>About</h1>
+        <h1 children="about-header">{message}</h1>
         <div className='about-section-forwards about-section'>
             <img src={Truckfest} alt="TruckFest 2022" className='about-image about-image-2'/>
             <p className='about-text'>This picture shows a portion of our current fleet lined up at Truckfest Ingliston 2022. We have a modern fleet, we tend to trust 

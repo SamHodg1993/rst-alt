@@ -1,5 +1,3 @@
-import Navbar from './Navbar';
-
 import '../styles/contact.css';
 
 import FiMail from '../images/icons/envelope.svg';
@@ -7,6 +5,7 @@ import FiPrinter from '../images/icons/printer.svg';
 import FiHome from '../images/icons/house.svg';
 import FiPhoneCall from '../images/icons/telephone.svg';
 import Footer from './Footer';
+import NavChooser from './NavChooser';
 
 function Contact() {
 
@@ -14,7 +13,7 @@ function Contact() {
 
   return (
     <div className='contact-cont'>
-      <Navbar />
+      <NavChooser />
       <h1 className='contact-header'>Contact</h1>
       <div className='contact-container' id="test4">
         <div className='contact-item'>

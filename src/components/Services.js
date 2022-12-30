@@ -2,14 +2,14 @@ import { FaWarehouse, FaTruckMoving, FaRoad, FaMap } from 'react-icons/fa';
 
 import '../styles/services.css';
 
-import Navbar from './Navbar';
 import Footer from './Footer';
+import NavChooser from './NavChooser';
 
 
 function Services() {
   return (
       <div className='serv-cont' id="test2">
-        <Navbar />
+        <NavChooser />
         <h1 className='services-header'>Services</h1>
         <div className="serv-item-container">
             <div className='serv-item'>

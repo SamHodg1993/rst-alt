@@ -10,6 +10,7 @@
     display: grid;
     grid-template-columns: 2fr 2fr;
     justify-items: center;
+    height: 160px;
     background-color: var(--blue-transparent);
 }
 

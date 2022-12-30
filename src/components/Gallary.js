@@ -1,14 +1,14 @@
-import Navbar from "./Navbar";
 import Footer from './Footer';
 
 import images from '../data/imagesData';
 
 import '../styles/gallary.css';
+import NavChooser from "./NavChooser";
 
 const Gallary = () => {
     return(
         <div className="gallary-cont">
-            <Navbar />
+            <NavChooser />
             <h1 className="gallary-header">Gallary</h1>
             <div className="gallary-container">
                 {images.map(img => {

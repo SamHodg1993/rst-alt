@@ -25,7 +25,9 @@ import testimonialsImage from './images/tile-images/FSE.jpg';
 import accoladesImage from './images/tile-images/SeanNewTruckShow.jpg';
 import Footer from './components/Footer';
 import MobileNavbar from './components/MobileNavbar';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
+import NavChooser from './components/NavChooser';
+import { UserContext } from './context/UserContext';
 
 const slideshowImages = [SeanTrussHighlands, 
   WhiskyCollection, 
@@ -39,17 +41,13 @@ const slideshowImages = [SeanTrussHighlands,
 
 function App() {
 
-  const [showMobileNavList, setShowMobileNavList] = useState(false);
-
-  const handleShowMobileNavList = () => {
-  }
+  const showingMobile = useContext(UserContext);
 
   return (
     <div className="homepage-container">
-      {window.innerWidth > 800 && <Navbar />}
-      {window.innerWidth < 800 && <MobileNavbar handleShowMobileNavList={handleShowMobileNavList}/>}
-      {showMobileNavList && <MobileNavList />}
-      {!showMobileNavList && 
+      <NavChooser />
+      {showingMobile && <MobileNavList />}
+      {!showingMobile && 
       <div>
         <div className="homepage-slider">
         <Fade>
