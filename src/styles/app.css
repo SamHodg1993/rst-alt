@@ -9,6 +9,7 @@
 *{
     margin: 0;
     font-family: 'Poppins';
+    color: var(--light);
 }
 
 .homepage-container{
@@ -119,6 +120,7 @@
 .review-header{
     font-family: 'Patua One', 'Poppins', sans-serif;
     font-size: 200%;
+    color: var(--blue);
 }
 
 .review-main{
