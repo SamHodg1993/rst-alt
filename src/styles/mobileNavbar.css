@@ -18,11 +18,11 @@
     transition-duration: 700ms;
 }
 
-
-.hamburger-icon:hover {
+/* Removed to come back to later */
+/* .hamburger-icon:hover {
     transform: rotate(90deg);
     transition-duration: 700ms;
-}
+} */
 
 
 
