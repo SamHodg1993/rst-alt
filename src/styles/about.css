@@ -58,18 +58,31 @@
     .about-section {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        height: 80vh
     }
 
     .about-image {
         max-width: 60rem;
-        padding: 3rem;
+        padding: 1rem 3rem 1rem 3rem;
         border-radius: 25px;
+        margin-left: 0;
+        margin-bottom: 0;
+        transform: translate(0%);
     }
 
 	.about-text {
-        padding: 2rem 14rem;
+        font-size: 150%;
+        padding: 5rem ;
+    }
+
+    .reverse {
+        flex-direction: row-reverse;
+        background-color: var(--blue-transparent);
+    }
+
+    .reverse > p {
+        color: var(--dark)
     }
 }

@@ -106,6 +106,10 @@
     border-bottom: 2px solid red;
 }
 
+.slide {
+    background-color: var(--light);
+}
+
 .review-wrapper{
     height: 60vh;
     align-items: center;
@@ -127,6 +131,7 @@
     font-family: 'Calligraffitti', 'Poppins', sans-serif;
     margin-top: 2rem;
     font-size: 225%;
+    color: var(--dark)
 }
 
 .footer-div {
@@ -204,5 +209,13 @@
 
     .section-tiles {
         height: 25rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .nav-chooser {
+        position: sticky;
+        top: 0;
+        z-index: 2;
     }
 }

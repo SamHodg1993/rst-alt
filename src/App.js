@@ -92,7 +92,7 @@ function App() {
           <img src={accoladesImage} alt="background" className='image-tile'/>
         </Link>
       </div>
-      <Slide>
+      <Slide className="slide">
         {reviewsData.map(review => {
           return(
             <div key={review.id} className="review-wrapper">
