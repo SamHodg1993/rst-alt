@@ -1,15 +1,19 @@
-import { Fade, Slide } from 'react-slideshow-image';
-import { Link } from 'react-router-dom';
-import { RiDoubleQuotesL, RiDoubleQuotesR } from 'react-icons/ri';
+// React imports
 import { useContext } from 'react';
+import { Link } from 'react-router-dom';
+import { Fade, Slide } from 'react-slideshow-image';
+import { RiDoubleQuotesL, RiDoubleQuotesR } from 'react-icons/ri';
 
+// Component imports
 import MobileNavList from './components/MobileNavList';
 import reviewsData from './data/reviewsData';
 
+// Style imports
 import './styles/app.css';
 import './styles/slideshow.css';
 import 'react-slideshow-image/dist/styles.css';
 
+// Image imports
 import SeanTrussHighlands from './images/SeanTrussHighlands.jpg';
 import WhiskyCollection from './images/WhiskyCollection.jpg';
 import TrussAndHill from './images/TrussAndHill.jpg';
@@ -46,7 +50,7 @@ function App() {
       <NavChooser />
       {showMobileList && <MobileNavList />}
       {!showMobileList && 
-      <div>
+      <div className='homepage-slider-container'>
         <div className="homepage-slider">
         <Fade>
           {slideshowImages.map(img => {
