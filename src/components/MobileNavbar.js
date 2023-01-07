@@ -2,7 +2,7 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 import { IconContext } from 'react-icons';
 import { useContext } from 'react';
 
-import logo from '../images/logo.png';
+import logo from '../images/logo-removebg.png';
 
 import '../styles/mobileNavbar.css'
 import { AppContext } from './Interim';

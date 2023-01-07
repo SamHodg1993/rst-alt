@@ -1,8 +1,8 @@
 :root{
-    --blue: rgb(18,177,227);
+    --blue: rgb(47,183,200);
     --dark: rgb(32,33,36);
     --light: rgb(243,243,238);
-    --blue-transparent: rgba(18,177,227,0.7);
+    --blue-transparent: rgba(47,183,200,0.7);
     --red: rgb(199,65,72);
 }
 .nav-container{
@@ -19,6 +19,10 @@
     border-top: 0.15rem solid var(--blue); */
 }
 
+.link-container {
+    margin-left: 2rem;
+}
+
 .nav{
     display: grid;
     grid-template-columns: 5fr 5fr 5fr 5fr 5fr;
@@ -32,6 +36,7 @@
     color: var(--dark);
     border-bottom: 2px solid rgba(255,23,23, 0);
     transition-duration: 0.5s;
+    font-size: 130%;
 }
 
 .link:hover{
