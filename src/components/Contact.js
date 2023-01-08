@@ -61,8 +61,9 @@ function Contact() {
               </ul>
             </div>
             <div className='contact-row'>
+              {/* DYNAMIC RENDEING THE MAP FOR THE DEVICE WIDTH */}
               <div className='google-map'>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2221.0677793825294!2d-3.0380219709357155!3d56.17322116872863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48864cd19e5b26d7%3A0x20a160f4f7fb2ae7!2sRobert%20Summers%20Transport%20Ltd!5e0!3m2!1sen!2suk!4v1670162472822!5m2!1sen!2suk" 
+                {window.innerWidth < 900 && <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2221.0677793825294!2d-3.0380219709357155!3d56.17322116872863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48864cd19e5b26d7%3A0x20a160f4f7fb2ae7!2sRobert%20Summers%20Transport%20Ltd!5e0!3m2!1sen!2suk!4v1670162472822!5m2!1sen!2suk" 
                   width={screenWidth-20} 
                   height="450" 
                   style={{border:"0"}} 
@@ -70,7 +71,16 @@ function Contact() {
                   loading="lazy" 
                   title="google-map-iframe"
                   >
-                </iframe>
+                </iframe>}
+                {window.innerWidth > 900 && <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2221.0677793825294!2d-3.0380219709357155!3d56.17322116872863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48864cd19e5b26d7%3A0x20a160f4f7fb2ae7!2sRobert%20Summers%20Transport%20Ltd!5e0!3m2!1sen!2suk!4v1670162472822!5m2!1sen!2suk" 
+                  width={screenWidth-(window.innerWidth/3)} 
+                  height="450" 
+                  style={{border:"1px solid black", marginLeft: '50%', transform: 'translate(-25%)'}} 
+                  allowFullScreen={true} 
+                  loading="lazy" 
+                  title="google-map-iframe"
+                  >
+                </iframe>}
               </div>
             </div>
           </div>

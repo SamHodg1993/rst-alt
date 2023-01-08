@@ -7,7 +7,7 @@
 }
 
 .contact-cont {
-    background-color: var(--dark);
+    background-color: var(--light);
 }
 
 .contact-header{
@@ -16,7 +16,7 @@
     border-bottom: 2px solid var(--red);
     margin: 0px 10px 0px 10px;
     height: 10vh;
-    background-color: var(--dark);
+    background-color: var(--light);
 }
 
 .contact-container{
@@ -24,8 +24,8 @@
     width: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: 4fr 4fr 4fr 4fr;
-    background-color: var(--dark);
-    color: var(--light);
+    background-color: var(--light);
+    color: var(--dark);
 }
 
 .contact-item {
@@ -54,7 +54,9 @@
 }
 
 .google-map {
-    margin: 0 10px 0 10px;
+    margin-top: 7rem;
+    margin-left: -20px;
+    margin-bottom: 7rem;
 }
 
 @media (min-width: 768px) {

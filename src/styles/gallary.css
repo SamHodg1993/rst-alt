@@ -7,11 +7,11 @@
 }
 
 body{
-    background-color: var(--dark);
+    background-color: var(--light);
 }
 
 .gallary-cont {
-    background-color: var(--dark);
+    background-color: var(--light);
 }
 
 .gallary-header{
@@ -23,7 +23,7 @@ body{
 }
 
 .gallary-container{
-    background-color: var(--dark);
+    background-color: var(--light);
     display: flex;
     flex-wrap: wrap;
     margin-top: 2rem;
