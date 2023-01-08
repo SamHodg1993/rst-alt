@@ -3,18 +3,18 @@
     --dark: rgb(32,33,36);
     --light: rgb(243,243,238);
     --blue-transparent: rgba(18,177,227,0.7);
-    --red: rgb(199,65,72);
+    --red: rgba(255,23,23, 1);
 }
 
 .footer{
     display: grid;
-    background-color: var(--light);
-    color: var(--dark);
+    background-color: var(--dark);
+    color: var(--light);
     padding-top: 1rem;
 }
 
 .hr {
-    background-color: red
+    background-color: var(--red);
 }
 
 .footer-main-sect {
@@ -31,7 +31,7 @@
 
 .mail-to {
     text-decoration: none;
-    color: var(--dark);
+    color: var(--light);
 }
 
 .mail-to:hover {

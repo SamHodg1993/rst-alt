@@ -14,6 +14,7 @@ function TopBar() {
                 <p><BsFillTelephoneFill size={20} className="tb-contact-icon"/>01592 713 172</p>
                 <p><MdEmail size={20} className="tb-contact-icon"/>traffic@robertsummerstransport.co.uk</p>
             </div>
+            {/* <button onClick={() => console.log(window.innerWidth)}>window inner width</button> */}
             <div className="tb-socials">
                 <BsFacebook size={20}  className='tb-social-item' href='https://www.facebook.com/profile.php?id=100063662462350'/>
                 <BsLinkedin size={20}  className='tb-social-item' href='https://www.linkedin.com/company/robert-summers-transport-limited/about/'/>
@@ -26,7 +27,9 @@ function TopBar() {
             </div>
             <div className="tb-details">
                 <div className="line"></div>
-                <p className='tb-details-text'>Delivering top Logistical solutions since 1801! Thats how old Davie is...</p>
+                {window.innerWidth > 1300 && 
+                    <p className='tb-details-text'>Delivering top Logistical solutions since 1801! Thats how old Davie is...</p>
+                }
                 <div className="line"></div>
                 <Navbar />
             </div>

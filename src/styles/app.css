@@ -1,9 +1,10 @@
 :root{
     --blue: rgb(18,177,227);
     --dark: rgb(32,33,36);
+    --very-dark: rgb(18,18,18);
     --light: rgb(243,243,238);
     --blue-transparent: rgba(18,177,227,0.7);
-    --red: rgb(199,65,72);
+    --red: rgba(255,23,23, 1);
 }
 
 *{
@@ -11,27 +12,23 @@
     font-family: 'Poppins';
 }
 
-body {
-    background-color: var(--light);
-}
-
 .homepage-container{
     height: 100vh;
-    background-color: var(--light);
+    background-color: var(--very-dark);
     background-repeat: no-repeat;
     background-size: 100vw auto;
 }
 
 .homepage-slider {
-    background-color: var(--dark);
+    background-color: var(--light);
 }
 
 .intro-main {
-    color: var(--dark)
+    color: var(--light);
 }
 
 .intro-details {
-    color: var(--dark)
+    color: var(--light)
 }
 
 .hr{
@@ -43,20 +40,20 @@ body {
 }
 
 .home-info {
-    background-color: var(--light);
-    color: var(--light);
+    background-color: var(--very-dark);
+    color: var(--dark);
     padding: 2rem 1rem;
 }
 
 .home-info > h2 {
     font-size: x-large;
-    background-color: var(--light);
+    background-color: var(--dark);
 }
 
 
 .home-info > p {
     font-size: large;
-    background-color: var(--light);
+    background-color: var(--dark);
 }
 
 .homepage-image{
@@ -70,7 +67,7 @@ body {
 
 .homepage-header{
     height: 20vh;
-    background-color: var(--dark);
+    background-color: var(--light);
     color: white;
     display: flex;
     flex-wrap: wrap;
@@ -79,14 +76,14 @@ body {
 }
 
 .homepage-slider {
-    background-color: var(--light);
+    background-color: var(--dark);
 }
 
 .tile-wrapper{
     display: grid;
     grid-template-rows: 6fr 6fr 6fr 6fr 6fr 6fr;
     padding: 0 0 2rem 0;
-    background-color: var(--light);
+    background-color: var(--dark);
 }
 
 .section-tiles{
@@ -94,13 +91,13 @@ body {
     width: auto;
     background-repeat: no-repeat;
     background-size: cover;
-    color: var(--light);
+    color: var(--dark);
     font-size: 200%;
     text-align: center;
     overflow: hidden;
     margin: 1rem;
     transition-duration: 0.2s;
-    box-shadow: 6px 8px 10px 4px darkgray;
+    box-shadow: 6px 8px 10px 4px var(--dark);
 }
 
 .section-tiles:hover{
@@ -122,7 +119,7 @@ body {
 }
 
 .slide {
-    background-color: var(--light);
+    background-color: var(--dark);
 }
 
 .review-wrapper{
@@ -146,11 +143,11 @@ body {
     font-family: 'Calligraffitti', 'Poppins', sans-serif;
     margin-top: 2rem;
     font-size: 225%;
-    color: var(--dark)
+    color: var(--light);
 }
 
 .footer-div {
-    background-color: var(--dark);
+    background-color: var(--light);
 }
 
 @media (min-width: 768px) {
@@ -234,5 +231,33 @@ body {
         z-index: 2;
     }
 
-    
+    .home-info {
+        display: flex;
+        flex-direction: column;
+        height: 30rem;
+        margin-bottom: 5rem;
+        justify-content: center;
+        padding-bottom: 1rem;
+    }
+
+    .intro-main {
+        padding: 3rem 1rem;
+        margin: 0;
+        max-width: 40%;
+        align-self: center;
+    }
+
+    .intro-details {
+        padding: 3rem 1rem;
+        margin: 0;
+        max-width: 40%;
+        margin-left: 50%;
+        transform: translate(-50%);
+    }
+
+    .hr {
+        max-width: 30%;
+        margin: 5rem 0 5rem 50%;
+        transform: translate(-50%);
+    }
 }

@@ -3,12 +3,12 @@
     --dark: rgb(32,33,36);
     --light: rgb(243,243,238);
     --blue-transparent: rgba(18,177,227,0.7);
-    --red: rgb(199,65,72);
+    --red: rgba(255,23,23, 1);
 }
 
 .tb-container {
     height: 12rem;
-    background-color: var(--light);
+    background-color: var(--dark);
 }
 
 
@@ -29,6 +29,7 @@
     text-align: end;
     gap: 5rem;
     margin-left: 3rem;
+    color: var(--dark);
 }
 
 .tb-contact-icon {
@@ -66,61 +67,12 @@
     margin: 0 3rem;
 }
 
+.tb-details-text {
+    color: var(--light);
+}
+
 .line {
     width: 5%;
     height: 0.1rem;
     background-color: var(--red);
 }
-
-
-
-/* .tb-container {
-    max-height: 10rem;
-    background-color: var(--light);
-    border-bottom: 0.2rem solid var(--light);
-}
-
-.top-section {
-    background-color: var(--blue);
-    height: 2rem;
-}
-
-.main-section {
-    display: grid;
-    grid-template-columns: 3fr 3fr 3fr;
-    padding-bottom: 1rem;
-}
-
-.tb-details {
-    max-width: 70%;
-}
-
-.tb-details-text{
-    color: var(--dark);
-    text-align: center;
-    padding-top: 3rem;
-}
-
-.tb-contact {
-    padding-top: 2rem;
-    max-width: 80%;
-    float: left;
-}
-
-.tb-contact > p {
-    max-width: max-content;
-    text-align: end;
-}
-
-.tb-logo-cont {
-    margin: 0.4rem;
-}
-
-.tb-logo {
-    max-height: 7rem;
-    float: right;
-}
-
-.grid-empty {
-    max-width: 1/5;
-} */

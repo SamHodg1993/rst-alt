@@ -3,7 +3,7 @@
     --dark: rgb(32,33,36);
     --light: rgb(243,243,238);
     --blue-transparent: rgba(47,183,200,0.7);
-    --red: rgb(199,65,72);
+    --red: rgba(255,23,23, 1);
 }
 .nav-container{
     position: sticky;
@@ -12,7 +12,7 @@
     display: grid;
     grid-template-columns: 3fr 4fr 2fr;
     align-items: center;
-    background-color: var(--light);
+    background-color: var(--dark);
     height: 6vh;
     z-index: 2;
     /* border-bottom: 0.15rem solid var(--blue);
@@ -33,14 +33,14 @@
 
 .link{
     text-decoration: none;
-    color: var(--dark);
+    color: var(--light);
     border-bottom: 2px solid rgba(255,23,23, 0);
     transition-duration: 0.5s;
     font-size: 130%;
 }
 
 .link:hover{
-    border-bottom: 2px solid rgba(255,23,23, 1);
+    border-bottom: 2px solid var(--red);
     color: var(--blue);
     transition-duration: 0.5s;
 }

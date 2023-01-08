@@ -3,15 +3,15 @@
     --dark: rgb(32,33,36);
     --light: rgb(243,243,238);
     --blue-transparent: rgba(18,177,227,0.7);
-    --red: rgb(199,65,72);
+    --red: rgba(255,23,23, 1);
 }
 
 body{
-    background-color: var(--dark);
+    background-color: var(--light);
 }
 
 .serv-cont {
-    background-color: var(--light);
+    background-color: var(--dark);
 }
 
 .services-header{
@@ -24,19 +24,19 @@ body{
 
 .serv-text{
     margin-top: 50px;
-    color: var(--dark);
+    color: var(--light);
 }
 
 .serv-item-container{
     display: grid;
     grid-template-rows: 4fr 4fr 4fr 4fr;
-    background-color: var(--light);
+    background-color: var(--dark);
 }
 
 .serv-item{
     width: 60vw;
     height: auto;
-    background-color: var(--light);
+    background-color: var(--dark);
     padding: 50px;
     margin: 1rem 1rem 1rem 50%;
     transform: translate(-50%);
